@@ -8,19 +8,33 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Eczar" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header-moblie">Josh Carroccia<br><span class="header-sub">Web Developer</span></h1>
-        <nav class="main-nav">
-            <ul class="main-nav__menu">
-                <li class="main-nav__item"><a href="index.html">Home</a></li>
-                <li class="main-nav__item"><a href="projects.html">Projects</a></li>
-                <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
-                <li class="main-nav__item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>        
+    <div class="top-container">
+            <h1>Josh Carroccia</h1>
+            <p class="mini-title">Learner - Dreamer - Experimenter - Puzzler</p>
+            <p class="big-title">&lt;Web Developer&gt;</p>
+            <ul class="header-contact"> 
+                    <li><a class="header-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
+                    <li><a class="header-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="header-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div id="myHeader">
+                <header class="header">
+                    
+                        <nav class="main-nav">
+                            <ul class="main-nav__menu">
+                                <li class="main-nav__item"><a href="index.html">Home</a></li>
+                                <li class="main-nav__item"><a href="projects.html">Projects</a></li>
+                                <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
+                                <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
+                            </ul>
+                        </nav>
+                    </header>
+            </div>    
+    <div class="content">
     <h2 class="project-header">My Work History</h2>
     <section class="resume-container">
         <section class="sidebar">
@@ -54,6 +68,27 @@
         
         <section class="resume">
           <!-- <h2 class"resume-header">Résumé</h2> -->
+          <section class="resume-info__work">
+              <ul>Work History
+                  <li class="resume-info__title">Momentum Learning — Back End Engineering</li>
+                  <ul class="resume-info__worklist">
+                      <li>A 12 week immersive coding training program focused on language fluency, object-oriented programming, and project-based learning.</li>
+                    </ul>
+                  <li class="resume-info__title">Oracle — Marketing Analyst</li>
+                  <ul class="resume-info__worklist">
+                      <li>Created and deployed all of Oracle’s Digital Marketing for North America using HTML/CSS and Eloqua</li>
+                      <li>Selected to be on Oracle’s Modern CX team where I managed the creation of all the emails and landing pages as well as the any updates to the Microsite</li>
+                      <li>Completed All of my task within stated timelines</li>
+                    </ul>
+                    <li class="resume-info__title">PFL — Software Implementation Specialist - Team Lead</li>
+                    <ul class="resume-info__worklist">
+                        <li>Through the use of Asana and daily stand ups, led my team to deliver a 100% on time completion of all implementations</li>
+                        <li>Created and built the first implementation of PFL’s Personal Marketing Center(PMC) app, which lives inside of a Clients Salesforce Instance</li>
+                        <li>Worked with Production and Customer Success teams to rebuild more efficient delivery workflows</li>
+                        <li>Built dynamic marketing materials for our clients using Javascript</li>
+                    </ul>
+                </ul> 
+            </section>
             <section class="resume-info__school">
                 <dl class="resume-info__school-title">Education
                     <dt>Montana State University</dt>
@@ -62,27 +97,10 @@
                     <dd>Completion of 12 week immersive course covering Web Development in 2018</dd>
                 </dl>
             </section>
-            <section class="resume-info__work">
-                    <ul>Work History
-                      <li class="resume-info__title">Oracle - Marketing Analyst</li>
-                        <ul class="resume-info__worklist">
-                            <li>Built and Managed Oracle's North American Marketing Campaigns and Events</li>
-                            <li>Was on the Microsite team and managed websites like Oracle's ModernCX Event page</li>
-                            <li>Created and Launched Email/Web campaigns for Oracle Marketers</li>
-                        </ul>
-                      <li class="resume-info__title">PFL - Software Implementation Specialist - Team Lead</li>
-                         <ul class="resume-info__worklist">
-                            <li>Managed a team of 5 to make sure implementations were accurate and on time</li>
-                            <li>Consultant for our Sales team in technical meetings</li>
-                            <li>Bridged the gap between the dev teams and sales teams</li>
-                            <li>Team Lead in charge of maintaining and executing implementation plans</li>
-                            <li>Used Javascript to create rules to allow automation within our customers' platforms</li>
-                            <li>Headed the implementation of our new apps and our first integrations into customers platforms</li>
-                          </ul>
-                    </ul> 
-            </section>
+            <a class="download-resume" href="resume.pdf" download>Download PDF</a>
         </section>  
     </section>
+    </div>
     <footer class="footer" id="contact">
             <ul class="footer-contact"> 
                 <li><a class="footer-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>

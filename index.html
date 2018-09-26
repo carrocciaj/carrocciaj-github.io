@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Eczar" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="top-container">
@@ -22,34 +23,34 @@
     </div>
     <div id="myHeader">
         <header class="header">
-              
                 <nav class="main-nav">
                     <ul class="main-nav__menu">
                         <li class="main-nav__item"><a href="index.html">Home</a></li>
                         <li class="main-nav__item"><a href="projects.html">Projects</a></li>
                         <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
-                        <li class="main-nav__item"><a href="#contact">Contact</a></li>
+                        <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
                     </ul>
                 </nav>
-            </header>
-     </div>
-
-    <h2 class="project-header">All About Me</h2>
-    <section class="aboutMe">
-        <section class="aboutMe-info">
-        <img class="aboutMe__main-image"src="grad.jpg">
-        </section>
-        <section class="aboutMe-info">
-                <p>
-                I am Josh Carroccia and I am from a small town in South Central Montana called Melville. I grew up on a ranch nestled deep into the Crazy Mountains where I enjoyed camping, hiking, fishing and riding horses.
-                <br><br>  
-                I moved out to Durham because of the strong tech community that is continuing to grom. I am an avid learner with a passion for solving problems, which I why I took the leap and joined Momentum Learning's Bootcamp.<br><br> 
-                 I have been working in the tech industry for 3 years in various roles. I was a Team Lead for a software implentation team at a company called PFL. In that role I learned how to lead a technical team and work with teams across the company to create and develop great solutions for our customers. At that role I also found my appreciation and passion toward coding. There we used javascript to create dynamic marketing materials for our clients.     <br><br>  
-                 Most recently I worked for Oracle as a Marketing Analyst, where I built emails and landing pages for the marketing teams across North America. Between PFL and Oracle, I realized that I wanted to build and work with more complex projects.
-                I also enjoy binge watching tv shows, playing first person shooters and RPGs and playing with his dog, Zeke.
-                </p>
-        </section>
-    </section>  
+        </header>
+    </div>
+    <div class="content">
+        <h2 class="project-header">All About Me</h2>
+        <section class="aboutMe">
+            <section class="aboutMe-info">
+            <img class="aboutMe__main-image"src="grad.jpg">
+            </section>
+            <section class="aboutMe-info">
+                    <p>
+                    I am Josh Carroccia and I am from a small town in South Central Montana called Melville. I grew up on a ranch nestled deep into the Crazy Mountains where I enjoyed camping, hiking, fishing and riding horses.
+                    <br><br>  
+                    I have been working in the tech industry for 3 years in various roles. I was a Team Lead for a software implentation team at a company called PFL. In that role I learned how to lead a technical team and work with teams across the company to create and develop great solutions for our customers. At that role I also found my appreciation and passion toward coding. There we used javascript to create dynamic marketing materials for our clients.     <br><br>  
+                    Most recently I worked for Oracle as a Marketing Analyst, where I built emails and landing pages for the marketing teams across North America. Between PFL and Oracle, I realized that I wanted to build and work with more complex projects.<br><br> 
+                    I moved out to Durham because of the strong tech community that is continuing to grow and figured this would be a great place to pursue a future in development. Therefore, I took the leap and joined Momentum Learning's Web Development Bootcamp. Since I had some front-end experience, I decided to choose the backend development route in order to gain as much knowledge as possible.<br><br> 
+                    Outside of coding I enjoy binge watching tv shows, playing first person shooters and RPGs and playing with my dog, Zeke.
+                    </p>
+            </section>
+        </section>  
+    </div>
     <footer class="footer" id="contact">
         <ul class="footer-contact"> 
             <li><a class="footer-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
@@ -59,19 +60,5 @@
         <p class="footer__info">Copyright: Josh Carroccia, Inc. 2018</p>
     </footer>
 
-    <script>
-            window.onscroll = function() {myFunction()};
-            
-            var header = document.getElementById("myHeader");
-            var sticky = header.offsetTop;
-            
-            function myFunction() {
-              if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-              } else {
-                header.classList.remove("sticky");
-              }
-            }
-    </script>
 </body>
 </html>

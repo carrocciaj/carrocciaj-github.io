@@ -55,7 +55,7 @@ img {
 }
 
 .header-contact a:hover{
-    color: #DBE9EE;
+    color: #97A7B3;
     text-decoration: none;
 }
 
@@ -64,14 +64,15 @@ img {
     top: 0;
     width: 100%;
   }
+
+  .sticky + .content {
+    padding-top: 1rem;
+  }
   
 .header {
-    /* display: flex; */
-    /* text-decoration: column; */
-    /* justify-content: space-between; */
     background-color: #97A7B3;
     align-content: center;
-    /* height: 150px; */
+    padding: 3px;
     
 }
 
@@ -241,7 +242,6 @@ img {
     font-size: 1.5rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #9B9987;
 }
 .resume-info__school dt{
     font-size: 1.25rem;
@@ -256,6 +256,7 @@ img {
 
 .resume-info__work {
     font-size: 1.5rem; 
+    border-bottom: 1px solid #9B9987;
 }
 .resume-info__title{
     font-size: 1.25rem;
@@ -267,7 +268,16 @@ img {
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
+.download-resume{      
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #475B63;
+}
 
+.download-resume:hover {
+    text-decoration: underline;
+    color: #DBE9EE;
+}
 /* ***********FOOTER CSS *********** */
 
 .footer {
@@ -348,6 +358,10 @@ img {
     .header h1 {
         display: none;
     }
+
+    .sticky + .content {
+        padding-top: 5rem;
+      }
 
     .header-desk{
         /* padding: 2.25rem 0 0 0; */

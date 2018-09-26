@@ -8,20 +8,32 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis|Eczar" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
-        <h1 class="header-moblie">Josh Carroccia<br><span class="header-sub">Web Developer</span></h1>
-        <nav class="main-nav">
-            <ul class="main-nav__menu">
-                <li class="main-nav__item"><a href="index.html">Home</a></li>
-                <li class="main-nav__item"><a href="projects.html">Projects</a></li>
-                <li class="header-desk">Josh Carroccia<br><span class="header-sub">Web Developer</span></li>
-                <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
-                <li class="main-nav__item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="top-container">
+            <h1>Josh Carroccia</h1>
+            <p class="mini-title">Learner - Dreamer - Experimenter - Puzzler</p>
+            <p class="big-title">&lt;Web Developer&gt;</p>
+            <ul class="header-contact"> 
+                    <li><a class="header-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
+                    <li><a class="header-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a class="header-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div id="myHeader">
+                <header class="header">
+                        <nav class="main-nav">
+                            <ul class="main-nav__menu">
+                                <li class="main-nav__item"><a href="index.html">Home</a></li>
+                                <li class="main-nav__item"><a href="projects.html">Projects</a></li>
+                                <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
+                                <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
+                            </ul>
+                        </nav>
+                    </header>
+            </div>
+    <div class="content">
     <h2 class="project-header">My Projects</h2>
      <section class="project">
         <section class="project-info">
@@ -53,6 +65,7 @@
                     </ul>
             </section>
     </section>  
+    </div>
     <footer class="footer" id="contact">
             <ul class="footer-contact"> 
                 <li><a class="footer-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>

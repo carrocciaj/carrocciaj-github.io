@@ -10,30 +10,43 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis|Eczar" rel="stylesheet">
 </head>
 <body>
+    <div class="top-container">
+      <h1>Josh Carroccia</h1>
+      <p class="mini-title">Learner - Dreamer - Experimenter - Puzzler</p>
+      <p class="big-title">&lt;Web Developer&gt;</p>
+      <ul class="header-contact"> 
+            <li><a class="header-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
+            <li><a class="header-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="header-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        </ul>
+    </div>
+    <div id="myHeader">
         <header class="header">
-                <h1 class="header-moblie">Josh Carroccia<br><span class="header-sub">Web Developer</span></h1>
+              
                 <nav class="main-nav">
                     <ul class="main-nav__menu">
                         <li class="main-nav__item"><a href="index.html">Home</a></li>
                         <li class="main-nav__item"><a href="projects.html">Projects</a></li>
-                        <li class="header-desk">Josh Carroccia<br><span class="header-sub">Web Developer</span></li>
                         <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
                         <li class="main-nav__item"><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </header>
-    <h2 class="project-header">All About Josh</h2>
+     </div>
+
+    <h2 class="project-header">All About Me</h2>
     <section class="aboutMe">
         <section class="aboutMe-info">
         <img class="aboutMe__main-image"src="grad.jpg">
         </section>
         <section class="aboutMe-info">
                 <p>
-                Josh Carroccia is from a small town in South Central Montana called Melville. He grew up on a ranch nestled deep into the Crazy Mountains 
-                where he enjoyed camping, hiking, fishing and riding horses.
+                I am Josh Carroccia and I am from a small town in South Central Montana called Melville. I grew up on a ranch nestled deep into the Crazy Mountains where I enjoyed camping, hiking, fishing and riding horses.
                 <br><br>  
-                He moved out to Durham because of the tech that is in the surrounding area. He has been working in the tech industry for 3 years and wanted to extend his technical knowledge by becoming a software developer.   <br><br>  
-                He also enjoys binge watching tv shows, playing first person shooters and RPGs and playing with his dog, Zeke.
+                I moved out to Durham because of the strong tech community that is continuing to grom. I am an avid learner with a passion for solving problems, which I why I took the leap and joined Momentum Learning's Bootcamp.<br><br> 
+                 I have been working in the tech industry for 3 years in various roles. I was a Team Lead for a software implentation team at a company called PFL. In that role I learned how to lead a technical team and work with teams across the company to create and develop great solutions for our customers. At that role I also found my appreciation and passion toward coding. There we used javascript to create dynamic marketing materials for our clients.     <br><br>  
+                 Most recently I worked for Oracle as a Marketing Analyst, where I built emails and landing pages for the marketing teams across North America. Between PFL and Oracle, I realized that I wanted to build and work with more complex projects.
+                I also enjoy binge watching tv shows, playing first person shooters and RPGs and playing with his dog, Zeke.
                 </p>
         </section>
     </section>  
@@ -45,5 +58,20 @@
         </ul>
         <p class="footer__info">Copyright: Josh Carroccia, Inc. 2018</p>
     </footer>
+
+    <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+    </script>
 </body>
 </html>

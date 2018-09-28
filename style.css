@@ -20,7 +20,7 @@ img {
     background-color: #f1f1f1;
     padding: 4rem 0;
     text-align: center;
-    padding: 245px 0;
+    /* padding: auto; */
   }
 
 .top-container h1 {
@@ -67,9 +67,11 @@ img {
     top: 0;
     width: 100%;
   }
-
+  .content {
+    padding: 16px;
+  }
   .sticky + .content {
-    padding-top: 0;
+    padding-top: 6rem;
   }
   
 .header {
@@ -133,8 +135,10 @@ img {
 }
 
 .aboutMe__header {
-
+    margin: 1rem 0 0 .5rem;
     font-size: 2.25rem;
+    color: #475B63; 
+    padding-top: 50px;
 }
 
 .aboutMe__main-image {
@@ -149,11 +153,12 @@ img {
 }
 
 /* *************Projects CSS ************* */
+
 .project-header {
     margin: 1rem 0 0 .5rem;
     font-size: 2.25rem;
     color: #475B63; 
-    padding-top: 50px;
+    padding-top: 10px;
 }
 .project {
     display: flex;
@@ -340,12 +345,15 @@ img {
 
     .top-container {
         background-color: #f1f1f1;
+        height: 100%;
         padding: 125px 0;
+        margin-bottom: 50px 0;
         text-align: center;
       }
     
     .top-container h1 {
         font-size: 5rem;
+        
     }
     
     .big-title {
@@ -367,9 +375,7 @@ img {
         display: none;
     }
 
-    .sticky + .content {
-        padding-top: 5rem;
-      }
+   
 
     .header-desk{
         /* padding: 2.25rem 0 0 0; */
@@ -414,7 +420,7 @@ img {
        font-size: 1.5rem;
    }
    .project-header {
-        padding-top: 20px;
+        padding-top: 150px;
    }
     .project {
         flex-direction: row;
@@ -460,7 +466,7 @@ img {
 }
 
 .onload-slide{
-    animation: 3s ease-out 0s 1 slide;  
+    animation: 1s ease-out 0s 1 slide;  
 }
 .onload-shake{
     animation: 2s ease-out 0s 1 shake;  

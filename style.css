@@ -20,6 +20,7 @@ img {
     background-color: #f1f1f1;
     padding: 4rem 0;
     text-align: center;
+    padding: 245px 0;
   }
 
 .top-container h1 {
@@ -37,13 +38,15 @@ img {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    
 }
 
 .header-contact li {
     list-style: none;
+    
 }
 
-.header-contact li:hover {
+.hover-shake:hover {
     animation-name: shake;
     animation-duration: 1s;
 }
@@ -66,14 +69,13 @@ img {
   }
 
   .sticky + .content {
-    padding-top: 1rem;
+    padding-top: 0;
   }
   
 .header {
     background-color: #97A7B3;
     align-content: center;
     padding: 3px;
-    
 }
 
 .header-desk {
@@ -119,11 +121,15 @@ img {
     color: #DBE9EE;
 }
 
-/* **********About ME CSS*********** */
 
+/* **********About ME CSS*********** */
+.hide {
+    display: none;
+}
 .aboutMe {
     margin: 1rem 0;   
     color: #475B63; 
+    
 }
 
 .aboutMe__header {
@@ -139,6 +145,7 @@ img {
 
 .aboutMe-info{
     padding: 0 2rem;
+    /* border-top: 1px solid #9B9987; */
 }
 
 /* *************Projects CSS ************* */
@@ -146,12 +153,13 @@ img {
     margin: 1rem 0 0 .5rem;
     font-size: 2.25rem;
     color: #475B63; 
+    padding-top: 50px;
 }
 .project {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 0 2rem;  
+    margin: 1rem 2rem;  
     color: #475B63; 
 }
 
@@ -302,15 +310,15 @@ img {
     list-style: none;
 }
 
-.footer-contact li:hover {
+/* .footer-contact li:hover {
     animation-name: shake;
     animation-duration: 1s;
-}
+} */
 
 .footer-contact a{
     color: #9B9987;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .footer-contact a:hover{
@@ -405,6 +413,9 @@ img {
        margin: 2rem 0 0 0;
        font-size: 1.5rem;
    }
+   .project-header {
+        padding-top: 20px;
+   }
     .project {
         flex-direction: row;
     }
@@ -438,3 +449,20 @@ img {
     transform: translate(25%);
   }
 }
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.onload-slide{
+    animation: 3s ease-out 0s 1 slide;  
+}
+.onload-shake{
+    animation: 2s ease-out 0s 1 shake;  
+}
+

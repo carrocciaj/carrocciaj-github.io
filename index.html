@@ -16,25 +16,25 @@
       <p class="mini-title">Learner - Dreamer - Experimenter - Puzzler</p>
       <p class="big-title">&lt;Web Developer&gt;</p>
       <ul class="header-contact"> 
-            <li><a class="header-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
-            <li><a class="header-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a class="header-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li class="onload-shake"><a class="header-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
+            <li class="onload-shake"><a class="header-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/"><i class="fa fa-linkedin"></i></a></li>
+            <li class="onload-shake"><a class="header-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
         </ul>
     </div>
     <div id="myHeader">
         <header class="header">
                 <nav class="main-nav">
                     <ul class="main-nav__menu">
-                        <li class="main-nav__item"><a href="index.html">Home</a></li>
-                        <li class="main-nav__item"><a href="projects.html">Projects</a></li>
-                        <li class="main-nav__item"><a href="resume.html">Résumé</a></li>
+                        <li class="main-nav__item"><a onclick="aboutMeSlide()" href="#about">AboutMe</a></li>
+                        <li class="main-nav__item"><a onclick="projectsSlide()" href="#projects">Projects</a></li>
+                        <li class="main-nav__item"><a href="resume.pdf">Résumé</a></li>
                         <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
                     </ul>
                 </nav>
         </header>
     </div>
-    <div class="content">
-        <h2 class="project-header">All About Me</h2>
+    <div class="content hide" id="about">
+        <h2 class="project-header" >All About Me</h2>
         <section class="aboutMe">
             <section class="aboutMe-info">
             <img class="aboutMe__main-image"src="grad.jpg">
@@ -51,11 +51,45 @@
             </section>
         </section>  
     </div>
-    <footer class="footer" id="contact">
+    
+    <div class="content hide" id="projects">
+            <h2 class="project-header">My Projects</h2>
+             <section class="project">
+                <section class="project-info">
+                    <h3>Nursery Shop Website</h3>
+                    <img src = "lazyRiver.png">
+                        <p>
+                        This was my first project building a simple webpage using HTML and CSS
+                        </p>
+                        <p>
+                        languages used: HTML CSS
+                        </p>
+                        <ul class="project-links">
+                            <li class="project-links__item"><a target="_blank" href="https://typhoon-icicle.glitch.me/">Live Page</a></li>
+                            <li class="project-links__item"><a target="_blank" href="https://github.com/momentum-cohort-2018-07/lab-w1d3-carrocciaj/tree/development/lazyRiver">GitHUb Code</a></li>
+                        </ul>
+                </section>
+                <section class="project-info">
+                        <h3>Dog Adoption Website</h3>
+                        <img src = "Dog-adoption.png">
+                            <p>
+                            This was a project building a simple webpage using HTML and some more advanced CSS
+                            </p>
+                            <p>
+                            languages used: HTML CSS
+                             </p>
+                            <ul class="project-links">
+                                <li class="project-links__item"><a target="_blank" href="https://lava-eye.glitch.me/">Live Page</a></li>
+                                <li class="project-links__item"><a target="_blank" href="https://github.com/momentum-cohort-2018-07/lab-w1d3-carrocciaj/tree/development/adoption">GitHUb Code</a></li>
+                            </ul>
+                    </section>
+            </section>  
+            </div>
+    <footer class="footer hide" id="contact">
         <ul class="footer-contact"> 
-            <li><a class="footer-contact__icon" target="_blank" href="https://github.com/carrocciaj"><i class="fa fa-github-square"></i></a></li>
-            <li><a class="footer-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a class="footer-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li><a target="_blank" href="https://github.com/carrocciaj">GitHub</a></li>
+            <li><a class="footer-contact__icon" target="_blank" href="https://www.linkedin.com/in/joshcarroccia/">LinkedIn</a></li>
+            <li><a class="footer-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com">Email Me</a></li>
         </ul>
         <p class="footer__info">Copyright: Josh Carroccia, Inc. 2018</p>
     </footer>

@@ -1,16 +1,16 @@
 
-window.onscroll = function() {stickyHeader()};
+// window.onscroll = function() {stickyHeader()};
 
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
+// var header = document.getElementById("myHeader");
+// var sticky = header.offsetTop;
 
-function stickyHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function stickyHeader() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add("sticky");
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+// }
 
 var aboutMe = document.getElementById("about")
 var projects = document.getElementById("projects")

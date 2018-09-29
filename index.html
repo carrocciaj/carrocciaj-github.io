@@ -11,6 +11,18 @@
   
 </head>
 <body>
+    <div class="sticky" id="myHeader">
+            <header class="header">
+                    <nav class="main-nav">
+                        <ul class="main-nav__menu">
+                            <li class="main-nav__item"><a onclick="aboutMeSlide()" href="#about">AboutMe</a></li>
+                            <li class="main-nav__item"><a onclick="projectsSlide()" href="#projects">Projects</a></li>
+                            <li class="main-nav__item"><a href="resume.pdf">Résumé</a></li>
+                            <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
+                        </ul>
+                    </nav>
+            </header>
+        </div>
     <div class="top-container">
       <h1>Josh Carroccia</h1>
       <p class="mini-title">Learner - Dreamer - Experimenter - Puzzler</p>
@@ -21,18 +33,7 @@
             <li class="onload-shake"><a class="header-contact__icon" target="_blank" href="mailto:agr.carroccia@gmail.com"><i class="fa fa-envelope"></i></a></li>
         </ul>
     </div>
-    <div id="myHeader">
-        <header class="header">
-                <nav class="main-nav">
-                    <ul class="main-nav__menu">
-                        <li class="main-nav__item"><a onclick="aboutMeSlide()" href="#about">AboutMe</a></li>
-                        <li class="main-nav__item"><a onclick="projectsSlide()" href="#projects">Projects</a></li>
-                        <li class="main-nav__item"><a href="resume.pdf">Résumé</a></li>
-                        <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
-                    </ul>
-                </nav>
-        </header>
-    </div>
+   
 
     <div class="content hide" id="about">
         <h2 class="aboutMe__header" >All About Me</h2>
@@ -53,7 +54,7 @@
         </section>  
     </div>
     
-    <div class="hide" id="projects">
+    <div class="content hide" id="projects">
             <h2 class="project-header">My Projects</h2>
              <section class="project">
                 <section class="project-info">

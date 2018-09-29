@@ -15,6 +15,7 @@ img {
     max-width: 100%;
 }
 
+
 /* ******Header******** */
 .top-container {
     background-color: #f1f1f1;
@@ -66,14 +67,14 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-  }
+}
   .content {
     background-color: #D4CDAB;
     padding: 50px;
-  }
+}
   .sticky + .content {
     padding-top: 1rem;
-  }
+}
   
 .header {
     background-color: #97A7B3;
@@ -123,7 +124,9 @@ img {
     text-decoration: underline;
     color: #DBE9EE;
 }
-
+.main-nav__onclick {
+    color: #DBE9EE;
+}
 
 /* **********About ME CSS*********** */
 .hide {
@@ -335,7 +338,14 @@ img {
     margin: 1rem 0;
 }
 
-
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 /* Responsive for once it hit 768px */
 
 @media only screen and (min-width: 600px){
@@ -346,7 +356,7 @@ img {
     .top-container {
         background-color: #f1f1f1;
         height: 100%;
-        margin-top: 50px;
+        /* margin-top: 50px; */
         padding: 140px 0;
         margin-bottom: 50px 0;
         text-align: center;
@@ -425,18 +435,31 @@ img {
    }
     .project {
         flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .project-info {
         max-width: 50%;
         padding: 0 1rem;
     }
+
+    .project-image {
+        max-height: 200px;
+    }
+
+    @keyframes slideFromRight {
+        0% {
+            transform: translateX(1000px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
 }
 
 @keyframes shake {
   0% 100% {
       transform: translate(-25%);
-      transform: rotate(360deg);
   }
   10% {
     transform: translate(25%);
@@ -457,18 +480,24 @@ img {
   }
 }
 
-@keyframes slide {
+@keyframes slideFromLeft {
     0% {
         transform: translateX(-100%);
     }
     100% {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 }
 
-.onload-slide{
-    animation: 1s ease-out 0s 1 slide;  
+
+
+.onload-slideLeft{
+    animation: 1s ease-out 0s 1 slideFromLeft;  
 }
+.onload-slideRight{
+    animation: 1s ease-out 0s 1 slideFromRight;  
+}
+
 .onload-shake{
     animation: 2s ease-out 0s 1 shake;  
 }

@@ -17,13 +17,13 @@
                         <ul class="main-nav__menu">
                             <li class="main-nav__item"><a onclick="aboutMeSlide()" href="#about">AboutMe</a></li>
                             <li class="main-nav__item"><a onclick="projectsSlide()" href="#projects">Projects</a></li>
+                            <li class="main-nav__item"><a onclick="contactsSlide()"href="#top-container">Contact</a></li>
                             <li class="main-nav__item"><a href="resume.pdf">Résumé</a></li>
-                            <!-- <li class="main-nav__item"><a href="#contact">Contact</a></li> -->
                         </ul>
                     </nav>
             </header>
         </div>
-    <div class="top-container">
+    <div class="top-container" id="top-container">
       <h1>Josh Carroccia</h1>
       <p class="mini-title">Learner - Dreamer - Experimenter - Puzzler</p>
       <p class="big-title">&lt;Web Developer&gt;</p>
@@ -58,33 +58,61 @@
             <h2 class="project-header">My Projects</h2>
              <section class="project">
                 <section class="project-info">
-                    <h3>Nursery Shop Website</h3>
-                    <img src = "lazyRiver.png">
+                    <h3>Rhubard Quiz</h3>
+                    <img class="project-image" src = "quiz.png">
                         <p>
-                        This was my first project building a simple webpage using HTML and CSS
+                        This was a group project where I was on a backend team that built an API that was consumed by a React app.
                         </p>
                         <p>
-                        languages used: HTML CSS
+                        Skills: Ruby on Rails, Token Authentication, Heroku, JBuilder, PostgreSQL, API, Documentation
+                        </p>
+                        <ul class="project-links">
+                            <li class="project-links__item"><a target="_blank" href="https://rhubarb-quiz-app.firebaseapp.com">Live Page</a></li>
+                            <li class="project-links__item"><a target="_blank" href="https://github.com/carrocciaj/quiz-show-rhubarb">GitHUb Code</a></li>
+                        </ul>
+                </section>
+                <section class="project-info">
+                    <h3>QuestionBox</h3>
+                    <img class="project-image" src = "questionBox.png">
+                        <p>
+                        This project was based on a stackoverflow type website where users can ask questions and recieve answers.
+                        </p>
+                        <p>
+                        Skills: Ruby on Rails, ActiveMailer, Bootstrap, Heroku, PostgreSQL, API version of App, Documentation
+                        </p>
+                        <ul class="project-links">
+                            <li class="project-links__item"><a target="_blank" href="https://all-the-answers.herokuapp.com/">Live Page</a></li>
+                            <li class="project-links__item"><a target="_blank" href="https://github.com/carrocciaj/questionbox">GitHUb Code</a></li>
+                        </ul>
+                </section>
+                <section class="project-info">
+                    <h3>Gameday</h3>
+                    <img class="project-image" src = "gameday.png">
+                        <p>
+                        This was a group project modeled after reddit, where users can join and discuss topics posted by other users.
+                        </p>
+                        <p>
+                        Skills: Ruby on Rails, HTML, CSS, PostgreSQL, Depoyed with Heroku
+                        </p>
+                        <ul class="project-links">
+                            <li class="project-links__item"><a target="_blank" href="https://hidden-beyond-25276.herokuapp.com/">Live Page</a></li>
+                            <li class="project-links__item"><a target="_blank" href="https://github.com/carrocciaj/gameday">GitHUb Code</a></li>
+                        </ul>
+                </section>
+                <section class="project-info">
+                    <h3>Nursery Shop Website</h3>
+                    <img class="project-image" src = "lazyRiver.png">
+                        <p>
+                        This was my first project building a simple webpage using HTML and CSS. This is to show how much growth happened during a 12 week program.
+                        </p>
+                        <p>
+                        Skills: HTML, CSS
                         </p>
                         <ul class="project-links">
                             <li class="project-links__item"><a target="_blank" href="https://typhoon-icicle.glitch.me/">Live Page</a></li>
                             <li class="project-links__item"><a target="_blank" href="https://github.com/momentum-cohort-2018-07/lab-w1d3-carrocciaj/tree/development/lazyRiver">GitHUb Code</a></li>
                         </ul>
                 </section>
-                <section class="project-info">
-                        <h3>Dog Adoption Website</h3>
-                        <img src = "Dog-adoption.png">
-                            <p>
-                            This was a project building a simple webpage using HTML and some more advanced CSS
-                            </p>
-                            <p>
-                            languages used: HTML CSS
-                             </p>
-                            <ul class="project-links">
-                                <li class="project-links__item"><a target="_blank" href="https://lava-eye.glitch.me/">Live Page</a></li>
-                                <li class="project-links__item"><a target="_blank" href="https://github.com/momentum-cohort-2018-07/lab-w1d3-carrocciaj/tree/development/adoption">GitHUb Code</a></li>
-                            </ul>
-                    </section>
             </section>  
             </div>
     <footer class="footer hide" id="contact">
